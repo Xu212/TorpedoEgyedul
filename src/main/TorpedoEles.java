@@ -12,7 +12,6 @@ public class TorpedoEles {
     public String loves(int poz) {
         int randomszam2 = randomszam1 + 1;
         int randomszam3 = randomszam1 + 2;
-        System.out.printf("%d %d %d",randomszam1, randomszam2, randomszam3);
         int[] pozicio = {randomszam1, randomszam2, randomszam3};
         Hajo hajo = new Hajo(pozicio);
         String talalte = hajo.talalat(poz);
