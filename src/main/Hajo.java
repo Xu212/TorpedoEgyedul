@@ -14,6 +14,9 @@ public class Hajo {
         if(i<pozicio.length){
             talalt = "talált";
         }
+        else{
+            talalt = "nem talált";
+        }
         return talalt;
     }
     
