@@ -3,12 +3,14 @@ package main;
 public class TorpedoTeszt {
 
     public static void main(String[] args) {
-        tesztLoves(4);
+        TorpedoTeszt tt = new TorpedoTeszt();
+        tt.tesztLoves(4);
     }
 
     public String tesztLoves(int poz) {
-        Hajo hajo = new Hajo();
-        String t = hajo.talalat(4);
+        int[] pozicio = {2, 3, 4};
+        Hajo hajo = new Hajo(pozicio);
+        String t = hajo.talalat(poz);
         assert t.equals("talált") : "nem jó a találat ellenőrzése";
         return "";
     }
